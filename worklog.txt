@@ -19,3 +19,13 @@ Workday 2/26/21
 1:00PM -- Rework project proposal
 
 1:30PM -- Finish up proposal rework
+
+2:00PM -- Research different payment technologies (stripe, plaid, etc)
+
+2:30PM -- Research above
+
+3:00PM -- Research above, youtube tutorials on integrating payment tech in mobile apps
+
+3:30PM -- Continue above
+
+4:00PM -- Add description section to README
