@@ -1,2 +1,21 @@
 Workday 2/26/21
 ----------------
+8:15AM -- Begin reading LearnHowToProgram lesson on React Native
+
+8:30AM -- Attempt to initialize expo dev environment, expo commands not working
+
+9:00AM -- Continue troubleshoot of expo commands not working, something related to machine env variable PATH
+
+9:30AM -- Continue troubleshoot above, reinstall Node & update to current version, doesn't fix
+
+10:00AM -- Continue trouble shoot above
+
+10:30AM -- Manually modified PATH variables and now expo commands work, init project! Hopefully my computer isn't broken now.
+
+11:00AM -- Research React Native
+
+11:30AM -- Research React Native
+
+1:00PM -- Rework project proposal
+
+1:30PM -- Finish up proposal rework
