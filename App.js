@@ -1,18 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/Header';
-import Control from './src/components/AppControl';
-
+import AppNavigator from './src/navigators/AppNavigator';
 
 export default function App() {
   return (
     <React.Fragment>
         <Header />
-        <View style={styles.container}>
-          <Control />
-          <StatusBar />
-        </View>
+          <AppNavigator /> 
     </React.Fragment>
   );
 }
