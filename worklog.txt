@@ -35,3 +35,5 @@ Workday 2/26/21
 3/9/21
 ----------
 8:30AM -- Research React Native Paper
+
+11:00AM -- Begin configuring firebase for React Native w/Expo
