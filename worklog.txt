@@ -31,3 +31,7 @@ Workday 2/26/21
 4:00PM -- Add description section to README
 
 4:30PM -- Setup Expo Go mobile app, attempt to view empty project in mobile
+
+3/9/21
+----------
+8:30AM -- Research React Native Paper
