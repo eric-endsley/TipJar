@@ -2,8 +2,13 @@ import React from 'react';
 import { Button } from 'react-native-paper';
 import { View, Text } from 'react-native';
 
-export default function Home({navigation}) {
-  // render() {
+// export default class Home extends React.Component({navigation}) {
+//   constructor(props){
+//   super(props)
+//   }
+
+//   render() {
+  export default function Home({navigation}) {
     return(
       <>
       <View> 
@@ -13,5 +18,5 @@ export default function Home({navigation}) {
       </View> 
       </>
     )
-  // } 
-}
+  } 
+// }
