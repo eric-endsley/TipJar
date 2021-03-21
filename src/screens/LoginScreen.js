@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
  
-export default function Login() {
+export default function LoginScreen() {
   // render() {
     return (
       <Text>Login screen</Text>
