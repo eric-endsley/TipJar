@@ -4,9 +4,9 @@ import { View, Text, StyleSheet } from 'react-native';
 
 export default function EventScreen({navigation}) {
   return(
-    <View>
+    <View style={styles.container}>
       <Text>Events will display here</Text>
-      <Button style={styles.button} onPress={() => navigation.navigate('EventFormScreen')} icon="calendar-plus" mode="contained">
+      <Button style={styles.button} onPress={() => navigation.navigate('EventForm')} icon="calendar-plus" mode="contained">
             Add a New Event
       </Button>
     </View> 
@@ -18,5 +18,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     marginRight: 15,
     marginLeft: 15,
+  },
+  container: {
+    alignContent: "flex-end"
   }
 })

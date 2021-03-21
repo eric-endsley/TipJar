@@ -1,9 +1,9 @@
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { View, Text } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
 import LoginScreen from '../screens/LoginScreen';
 import EventScreen from '../screens/EventScreen';
+import EventFormScreen from '../screens/EventFormScreen';
 import React from 'react';
 
 
@@ -18,6 +18,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Events" component={EventScreen} />
+        <Stack.Screen name="EventForm" component={EventFormScreen} />
       </Stack.Navigator>
   )
 }
