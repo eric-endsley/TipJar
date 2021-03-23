@@ -32,10 +32,14 @@ Workday 2/26/21
 
 4:30PM -- Setup Expo Go mobile app, attempt to view empty project in mobile
 
-3/9/21
+Workday 3/9/21
 ----------
 8:30AM -- Research React Native Paper
 
 11:00AM -- Begin configuring firebase for React Native w/Expo
 
 12:00AM -- temporarily give up configuring firebase  for React Native w/Expo, contact customer support re: "unknown error occurred" when making any changes on firebase console.
+
+Workday 3/22/21
+----------
+6:30PM -- Research image selection tools for react native & expo 

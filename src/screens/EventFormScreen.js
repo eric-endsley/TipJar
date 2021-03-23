@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { Button } from 'react-native-paper';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
-import Slider from '@react-native-community/slider';
+import CustomSlider from '../components/CustomSlider'
+import ImagePicker from '../components/ImagePicker'
 
 export default function EventFormScreen({navigation}) {
   const [value, setValue] = useState(0);
@@ -10,8 +11,9 @@ export default function EventFormScreen({navigation}) {
       <Text style={styles.header}>Add An Event</Text>
       <TextInput placeholder="Event Name"></TextInput>
       <TextInput placeholder="Performer Names"></TextInput>
-      <Text>Default tip amount: ${value}</Text>
-      <Slider step={1} minimumValue={0} maximumValue={20} value={value} onValueChange={slideValue=> setValue(slideValue)} />
+      <CustomSlider />
+      <ImagePicker />
+      <Text>Is this thing on?</Text>
       <Button style={styles.button} onPress={() => console.log("submitted")} icon="calendar-plus" mode="contained">
             Add Event
       </Button>
