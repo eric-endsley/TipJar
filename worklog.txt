@@ -43,3 +43,7 @@ Workday 3/9/21
 Workday 3/22/21
 ----------
 6:30PM -- Research image selection tools for react native & expo 
+
+8:00PM -- Research form submission handling in expo and how to integrate firebase with it, try to figure out how I'm going to hand my slider value up to my form
+
+10:00PM -- Write a bunch of different code for form submission that doesn't work, get tired
