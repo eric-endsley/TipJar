@@ -1,5 +1,5 @@
 Workday 2/26/21
-----------------
+----------
 8:15AM -- Begin reading LearnHowToProgram lesson on React Native
 
 8:30AM -- Attempt to initialize expo dev environment, expo commands not working
@@ -40,6 +40,10 @@ Workday 3/9/21
 
 12:00AM -- temporarily give up configuring firebase  for React Native w/Expo, contact customer support re: "unknown error occurred" when making any changes on firebase console.
 
+Workday 3/20/21
+----------
+1:00pm - 2:30PM -- Setup and debug problems with Android device emulator on my PC
+
 Workday 3/22/21
 ----------
 6:30PM -- Research image selection tools for react native & expo 
@@ -47,3 +51,7 @@ Workday 3/22/21
 8:00PM -- Research form submission handling in expo and how to integrate firebase with it, try to figure out how I'm going to hand my slider value up to my form
 
 10:00PM -- Write a bunch of different code for form submission that doesn't work, get tired
+
+Workday 3/23/21
+----------
+2:00 PM -- Continiue research on passing form data to Firebase in Expo
