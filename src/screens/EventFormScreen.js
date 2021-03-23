@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Button } from 'react-native-paper';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 import CustomSlider from '../components/CustomSlider'
-import ImagePicker from '../components/ImagePicker'
+import ImageForm from '../components/ImageForm'
 
 export default function EventFormScreen({navigation}) {
   const [value, setValue] = useState(0);
@@ -11,9 +11,8 @@ export default function EventFormScreen({navigation}) {
       <Text style={styles.header}>Add An Event</Text>
       <TextInput placeholder="Event Name"></TextInput>
       <TextInput placeholder="Performer Names"></TextInput>
+      <ImageForm />
       <CustomSlider />
-      <ImagePicker />
-      <Text>Is this thing on?</Text>
       <Button style={styles.button} onPress={() => console.log("submitted")} icon="calendar-plus" mode="contained">
             Add Event
       </Button>

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Image, View, Platform } from 'react-native';
+import { Image, View, StyleSheet } from 'react-native';
 import { Button } from 'react-native-paper';
 import * as ImagePicker from 'expo-image-picker';
 
-export default function ImagePickerExample() {
+export default function ImageForm() {
   const [image, setImage] = useState(null);
 
   useEffect(() => {
@@ -39,3 +39,11 @@ export default function ImagePickerExample() {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  button: {
+    backgroundColor: 'black',
+    marginRight: 15,
+    marginLeft: 15,
+  }
+})
