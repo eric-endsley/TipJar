@@ -54,7 +54,7 @@ Workday 3/22/21
 
 Workday 3/23/21
 ----------
-2:00 PM -- Continiue research on passing form data to Firebase in Expo
+2:00 PM -- Continue research on passing form data to Firebase in Expo
 
 3:30PM -- Expo live server stops working, won't connect
 
@@ -63,3 +63,5 @@ Workday 3/23/21
 6:00PM -- Be mad. Cannot send data to firestore.
 
 7:15PM -- After demonstrating that my firebase config is fine by sucessfully pushing data to realtime database, having read like 50 stack overflow pages and revisited the firebase & expo documentations an upsetting number of times, I am at a complete loss as to why I cannot send data to firestore. 
+
+Midnight -- FINALLY GOT FIRESTORE ACTUALLY WORKING
