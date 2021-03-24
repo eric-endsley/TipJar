@@ -57,3 +57,7 @@ Workday 3/23/21
 2:00 PM -- Continiue research on passing form data to Firebase in Expo
 
 3:30PM -- Expo live server stops working, won't connect
+
+4:00PM -- Debugging firestore not accepting data, not throwing errors
+
+6:00PM -- Be mad. Cannot send data to firestore.

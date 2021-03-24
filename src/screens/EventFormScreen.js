@@ -8,10 +8,11 @@ import firebase from '../components/Firebase'
 
 const dbh = firebase.firestore();
 
+
 export default function EventFormScreen({navigation}) {
   const [name, setName] = useState("")
   const [perf, setPerf] = useState("")
-
+  
   return(
     <View>
       <Text style={styles.header}>Add An Event</Text>
@@ -24,15 +25,24 @@ export default function EventFormScreen({navigation}) {
       </Button>
     </View> 
   )
+
+  function onSubmit() {
+    const uid = Random.getRandomBytes(16).toString();
+      // dbh.collection("events").doc(uid).set({
+      // name: "jim",
+      // performers: "jon",
+      // id: uid
+      firebase.database().ref('users/'+uid).set({
+        name: name,
+        performers: perf
+    }).then(
+      console.log("Document written!")
+    ).catch(function(error) {
+      console.error(error);
+    })
+  }
 }
 
-function onSubmit(event) {
-  dbh.collection("events").doc({name}).set({
-    name: name,
-    performers: perf,
-    id: Random.getRandomBytes(16)
-  })
-}
 
 const styles = StyleSheet.create({
   button: {

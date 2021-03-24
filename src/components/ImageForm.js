@@ -23,8 +23,6 @@ export default function ImageForm() {
       quality: 1,
     });
 
-    console.log(result);
-
     if (!result.cancelled) {
       setImage(result.uri);
     }
