@@ -28,14 +28,9 @@ export default function EventFormScreen({navigation}) {
 
   function onSubmit() {
     var dbh = firebase.firestore();
-    
     dbh.collection("events").add({
-    name: "jim",
-    performers: "jon",
-    // id: uid
-    // firebase.database().ref('users/'+uid).set({
-    //   name: name,
-    //   performers: perf
+    name: name,
+    performers: perf,
   }).then((docRef) => {
     console.log("Document written with ID: ", docRef.id)
   }).catch(function(error) {
