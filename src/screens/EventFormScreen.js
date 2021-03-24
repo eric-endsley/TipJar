@@ -5,7 +5,7 @@ import CustomSlider from '../components/CustomSlider'
 import ImageForm from '../components/ImageForm'
 import * as Random from 'expo-random'
 import firebase from '../components/Firebase'
-
+import colors from '../config/colors'
 
 
 
@@ -44,7 +44,7 @@ export default function EventFormScreen({navigation}) {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: 'black',
+    backgroundColor: colors.black,
     marginRight: 15,
     marginLeft: 15,
   },
