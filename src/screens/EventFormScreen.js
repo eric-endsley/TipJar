@@ -3,7 +3,6 @@ import { Button } from 'react-native-paper';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 import CustomSlider from '../components/CustomSlider'
 import ImageForm from '../components/ImageForm'
-import * as Random from 'expo-random'
 import firebase from '../components/Firebase'
 import colors from '../config/colors'
 
@@ -14,7 +13,7 @@ export default function EventFormScreen({navigation}) {
   const [perf, setPerf] = useState("")
   
   return(
-    <View>
+    <View style={styles.container}>
       <Text style={styles.header}>Add An Event</Text>
       <TextInput name="name" onChangeText={(text) => setName(text)} placeholder="Event Name"></TextInput>
       <TextInput name="peformers" onChangeText={(text) => setPerf(text)} placeholder="Performer Names"></TextInput>
@@ -52,5 +51,9 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     fontWeight: 'bold',
     fontSize: 20
+  },
+  container: {
+    backgroundColor: colors.grey,
+    flex: 1
   }
 })

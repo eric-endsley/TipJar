@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-native-paper';
 import { View, Text, StyleSheet } from 'react-native';
+import colors from '../config/colors'
 
 export default function EventScreen({navigation}) {
   return(
@@ -20,6 +21,9 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   container: {
-    alignContent: "flex-end"
+    flex: 1,
+    alignContent: 'flex-end',
+    backgroundColor: colors.grey
+
   }
 })
