@@ -62,4 +62,4 @@ Workday 3/23/21
 
 6:00PM -- Be mad. Cannot send data to firestore.
 
-7:14PM -- After demonstrating that my firebase config is fine by sucessfully pushing data to realtime database, having read like 50 stack overflow pages and revisited the firebase & expo documentations an upsetting number of times, I am at a complete loss as to why I cannot send data to firestore. 
+7:15PM -- After demonstrating that my firebase config is fine by sucessfully pushing data to realtime database, having read like 50 stack overflow pages and revisited the firebase & expo documentations an upsetting number of times, I am at a complete loss as to why I cannot send data to firestore. 
