@@ -3,7 +3,7 @@ import { Button } from 'react-native-paper';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 import CustomSlider from '../components/CustomSlider'
 import ImageForm from '../components/ImageForm'
-import firebase from '../components/Firebase'
+import firebase from '../firebase/Firebase'
 import colors from '../config/colors'
 
 

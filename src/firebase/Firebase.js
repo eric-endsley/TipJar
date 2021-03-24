@@ -21,6 +21,6 @@ if (!firebase.apps.length) {
   firebase.app();
 }
 
-firebase.setLogLevel("debug")
+// firebase.setLogLevel("debug")
 
 export default firebase;
