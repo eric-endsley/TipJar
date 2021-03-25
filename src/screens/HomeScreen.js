@@ -8,7 +8,7 @@ export default function HomeScreen({navigation}) {
   return(
     <>
     <View styles={styles.container}>
-      <Button style={styles.button} onPress={() => navigation.navigate('Login')} icon="account" mode="contained">
+      <Button style={styles.button} onPress={() => navigation.navigate('Register')} icon="account" mode="contained">
         Login/Register
       </Button>
       <Button style={styles.button} onPress={() => navigation.navigate('Events')} icon="microphone-variant" mode="contained">

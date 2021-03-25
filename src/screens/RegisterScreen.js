@@ -10,36 +10,40 @@ export default function RegisterScreen({navigation}) {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [organization, setOrganization] = useState()
 
-  function handlePress() {
+  const handlePress = () => {
       if (!email) {
-        Alert.alert('Email is required')
+        Alert.alert('Email is required');
       } if (!password) {
-        Alert.alert('Password is required')
+        Alert.alert('Password is required');
       } else if (!confirmPassword) {
-        Alert.alert('Confirm password is required')
+        Alert.alert('Confirm password is required');
       } else if (password != confirmPassword) {
-        Alert.alert('Passwords do not match')
+        Alert.alert('Passwords do not match');
       } else {
-        register(email, password, organization)
-        Alert.alert('Success')
-        navigation.navigate('Home')
+        register(email, password, organization);
+        Alert.alert('Success');
+        navigation.navigate('Home');
       }  
   }
+  
   return(
     <View style={styles.container}>
       <Text style={styles.header}></Text>
       <TextInput name="bandOrOrg" onChangeText={(text) => setOrganization(text)} placeholder="Enter your band or organization" />
       <TextInput name="email" onChangeText={(text) => setEmail(text)} placeholder="Enter your email" />
-      <TextInput name="password" onChangeText={(text) => setPassword(text)} placeholder="Enter a password" />
-      <TextInput name="confirmPassword" onChangeText={(text) => setConfirmPassword(text)} placeholder="Reenter your password" />
-      <Button onPress={() => handlePress()}></Button>
+      <TextInput name="password" onChangeText={(text) => setPassword(text)} secureTextEntry={true} placeholder="Enter a password" />
+      <TextInput name="confirmPassword" onChangeText={(text) => setConfirmPassword(text)} secureTextEntry={true} placeholder="Reenter your password" />
+      <Button style={styles.button} onPress={handlePress} icon="account" mode="contained">
+        Register Account
+      </Button>
     </View>
     )
 }
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: 'black',
+    backgroundColor: colors.black,
+    color: colors.seafoam,
     marginRight: 15,
     marginLeft: 15,
   },

@@ -1,6 +1,6 @@
 import firebase from './Firebase'
 
-export async function registration(email, password, organization) {
+export default async function register(email, password, organization) {
   try {
     await firebase.auth().createUserWithEmailAndPassword(email, password);
     const currentUser = firebase.auth().currentUser;
