@@ -22,7 +22,7 @@ export default function LoginScreen({navigation}) {
       </Button>
       <Text>Don't have an account?</Text>
       <Button style={styles.button} onPress={() => navigation.navigate("Register")} icon="account" mode="contained">
-        Login
+        Register
       </Button>
     </View>      
   )

@@ -32,7 +32,7 @@ const handlePress = () => {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: 'black',
+    backgroundColor: colors.black,
     marginRight: 15,
     marginLeft: 15,
   },

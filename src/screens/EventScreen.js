@@ -16,8 +16,8 @@ export default function EventScreen({navigation}) {
       if (user) { 
         navigation.navigate('EventForm')
       } else {
-        Alert.alert("You need an account to do that")
-        navigation.navigate('Register')
+        Alert.alert("You need to be logged in to do that")
+        navigation.navigate('Login')
       }
     })
   }
