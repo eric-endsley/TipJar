@@ -11,12 +11,16 @@ import colors from '../config/colors'
 export default function EventFormScreen({navigation}) {
   const [name, setName] = useState("")
   const [perf, setPerf] = useState("")
+  const [address, setAddress] = useState("")
+  const [datetime, setDatetime] = useState("")
   
   return(
     <View style={styles.container}>
       <Text style={styles.header}>Add An Event</Text>
       <TextInput name="name" onChangeText={(text) => setName(text)} placeholder="Event Name"></TextInput>
       <TextInput name="peformers" onChangeText={(text) => setPerf(text)} placeholder="Performer Names"></TextInput>
+      <TextInput name="address" onChangeText={(text) => setAddress(text)} placeholder="Address"></TextInput>
+      <TextInput name="datetime" onChangeText={(text) => setDatetime(text)} placeholder="Date and Time"></TextInput>
       <ImageForm  />
       <CustomSlider />
       <Button style={styles.button} onPress={() => onSubmit()} icon="calendar-plus" mode="contained">
@@ -30,6 +34,8 @@ export default function EventFormScreen({navigation}) {
     dbh.collection("events").add({
     name: name,
     performers: perf,
+    address: address,
+    datetime: datetime
   }).then((docRef) => {
     console.log("Document written with ID: ", docRef.id)
   }).catch(function(error) {
