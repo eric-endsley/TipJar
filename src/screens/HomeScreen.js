@@ -6,7 +6,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function HomeScreen({navigation}) {
   return(
     <>
-    <View>
+    <View styles={styles.container}>
       <Button style={styles.button} onPress={() => navigation.navigate('Login')} icon="account" mode="contained">
         Login/Register
       </Button>
@@ -23,5 +23,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     marginRight: 15,
     marginLeft: 15,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: colors.grey
   }
 })

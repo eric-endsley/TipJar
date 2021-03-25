@@ -7,7 +7,6 @@ export default function dataToFlatList(querySnapshot) {
       dataObj["id"] = doc.id;
       dataArray.push(dataObj)
     });
-  console.log(dataArray)
   return dataArray;
 }
 

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Button } from 'react-native-paper';
 import { ActivityIndicator, View, Text, StyleSheet, FlatList } from 'react-native';
 import EventCard from '../components/EventCard'
+import ListSeparator from '../components/ListSeparator'
 import colors from '../config/colors'
 import dataToFlatList from '../firebase/dataToFlatList'
 import firebase from '../firebase/Firebase'
@@ -29,6 +30,7 @@ export default function EventScreen({navigation}) {
       <FlatList
         data={eventData}
         keyExtractor={item => item.id}
+        ItemSeparatorComponent={ListSeparator}
         renderItem={({item}) =>
         <EventCard name={item.name} performers={item.performers} venue={item.venue} address={item.address} datetime={item.datetime}/>} />
       <Button style={styles.button} onPress={() => navigation.navigate('EventForm')} icon="calendar-plus" mode="contained">
@@ -47,6 +49,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.grey
-
   }
 })
