@@ -13,7 +13,6 @@ export default function EventScreen({navigation}) {
     const subscriber = firebase.firestore()
       .collection('events')
       .onSnapshot((querySnapshot => {
-        console.log(querySnapshot)
         setEventData(dataToFlatList(querySnapshot));
       }))
     setLoading(false)
@@ -30,7 +29,7 @@ export default function EventScreen({navigation}) {
         data={eventData}
         keyExtractor={item => item.id}
         renderItem={({item}) =>
-        <Text>{item.name} {item.performers}</Text>} />
+        <Text>{item.name} {item.performers} {item.address} {item.datetime} </Text>} />
       <Button style={styles.button} onPress={() => navigation.navigate('EventForm')} icon="calendar-plus" mode="contained">
           Add a New Event
       </Button>
