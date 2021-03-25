@@ -34,7 +34,7 @@ Workday 2/26/21
 
 Workday 3/9/21
 ----------
-8:30AM -- Research React Native Paper
+8:30AM -- Research React Native Paper versus other styling options, research Material UI
 
 11:00AM -- Begin configuring firebase for React Native w/Expo
 

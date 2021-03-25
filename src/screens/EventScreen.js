@@ -27,6 +27,7 @@ export default function EventScreen({navigation}) {
 
   return(
     <View style={styles.container}>
+      <Text style={styles.header}>Events Near You</Text>
       <FlatList
         data={eventData}
         keyExtractor={item => item.id}
@@ -49,5 +50,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.grey
-  }
+  },
+  header: {
+    alignSelf: 'center',
+    fontWeight: 'bold',
+    fontSize: 20
+  },
 })

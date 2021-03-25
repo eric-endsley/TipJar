@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.navy,
     borderWidth: 5,
     flexDirection: 'row',
-    width: '80%',
+    width: '90%',
     alignSelf: 'center',
   },
   image: {
