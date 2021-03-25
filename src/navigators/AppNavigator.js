@@ -20,9 +20,6 @@ export default function AppNavigator() {
   }
   return (
       <Stack.Navigator>
-      {/* // <Stack.Navigator screenOptions={{
-      //   headerShown: false
-      // }}> */}
         <Stack.Screen name="Home" component={HomeScreen} options={headerStyleNavy} />
         <Stack.Screen name="Register" component={RegisterScreen} options={headerStyleNavy}/>
         <Stack.Screen name="Events" component={EventScreen} options={headerStyleNavy}/>

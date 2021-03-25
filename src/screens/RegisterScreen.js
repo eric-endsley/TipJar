@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Text, View, TextInput, StyleSheet, Alert } from 'react-native';
+import { View, TextInput, StyleSheet, Alert } from 'react-native';
 import { Button } from 'react-native-paper';
 import register from '../firebase/register';
 import colors from '../config/colors';

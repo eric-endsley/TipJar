@@ -1,6 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Header from './src/components/Header';
 import AppNavigator from './src/navigators/AppNavigator';
 import { NavigationContainer } from '@react-navigation/native';
 

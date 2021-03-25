@@ -13,9 +13,9 @@ Streamlining this process will make it easier for performers to collect funds, a
 Disclaimer: This app is under construction and remains in a skeletal state. There is currently no payment functionality built into the app.
 
 Currently the apps functionality is limited to:
-*Allowing users to register an account using firebase.
-*Allowing registered users to post new events to the firestore, which tipjars will be attached to.
-*Allowing all users to see a list of current posted events with tipjars.
+* Allowing users to register an account using firebase.
+* Allowing registered users to post new events to the firestore, which tipjars will be attached to.
+* Allowing all users to see a list of current posted events with tipjars.
 
 ## Setup
 
@@ -57,3 +57,28 @@ expo start
 
 A browser window should open. In the menu on the left of the screen select "Run on Android Device/Simulator". This should begin running the app in your emulator.
 
+## Technologies Used
+* Visual Studio Code
+* Git
+* Javascript
+* React
+* React Native
+* React Native Dotenv
+* React Native Paper
+* [React Native Slider -- Community Developed](https://reactnative.dev/docs/slider)
+* React Navigation
+* Material Icons
+* Expo
+* Expo Image Picker
+* Firebase
+* Firestore
+* [Lorem Picsum](https://picsum.photos/)
+
+## Known Bugs
+None
+
+## Contact Information
+To ask questions or report a bug, contact [Eric Endsley](mailto:eric.endsley4@gmail.com)
+
+## Legal
+This software is licensed under the MIT license.
