@@ -1,7 +1,7 @@
 import firebase from '../firebase/Firebase'
 import { Alert } from 'react-native'
 
-export async function logout() {
+export default async function logout() {
   try {
     await firebase.auth().signOut(); 
 

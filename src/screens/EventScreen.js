@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Button } from 'react-native-paper';
-import { ActivityIndicator, View, Text, StyleSheet, FlatList } from 'react-native';
+import { ActivityIndicator, View, Text, StyleSheet, FlatList, Alert } from 'react-native';
 import EventCard from '../components/EventCard'
 import ListSeparator from '../components/ListSeparator'
 import colors from '../config/colors'
@@ -10,6 +10,17 @@ import firebase from '../firebase/Firebase'
 export default function EventScreen({navigation}) {
   const [loading, setLoading] = useState(true);
   const [eventData, setEventData] = useState([])
+
+  const handlePress = () => {
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) { 
+        navigation.navigate('EventForm')
+      } else {
+        Alert.alert("You need an account to do that")
+        navigation.navigate('Register')
+      }
+    })
+  }
 
   useEffect(() => {
     const subscriber = firebase.firestore()
@@ -34,7 +45,7 @@ export default function EventScreen({navigation}) {
         ItemSeparatorComponent={ListSeparator}
         renderItem={({item}) =>
         <EventCard name={item.name} performers={item.performers} venue={item.venue} address={item.address} datetime={item.datetime}/>} />
-      <Button style={styles.button} onPress={() => navigation.navigate('EventForm')} icon="calendar-plus" mode="contained">
+      <Button style={styles.button} onPress={handlePress} icon="calendar-plus" mode="contained">
           Add a New Event
       </Button>
     </View> 

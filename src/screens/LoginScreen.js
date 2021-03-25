@@ -13,7 +13,6 @@ export default function LoginScreen({navigation}) {
     navigation.navigate("Home")
 }
 
-
   return( 
     <View style={styles.container}>
       <TextInput name="email" onChangeText={(text) => setEmail(text)} placeholder="Enter your email" />
@@ -28,7 +27,6 @@ export default function LoginScreen({navigation}) {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: colors.black,
-    color: colors.seafoam,
     marginRight: 15,
     marginLeft: 15,
   },

@@ -42,7 +42,6 @@ export default function RegisterScreen({navigation}) {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: colors.black,
-    color: colors.seafoam,
     marginRight: 15,
     marginLeft: 15,
   },
