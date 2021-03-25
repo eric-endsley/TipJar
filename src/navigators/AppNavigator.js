@@ -3,6 +3,8 @@ import HomeScreen from '../screens/HomeScreen';
 import RegisterScreen from '../screens/RegisterScreen';
 import EventScreen from '../screens/EventScreen';
 import EventFormScreen from '../screens/EventFormScreen';
+import LoginScreen from '../screens/LoginScreen';
+import LogoutScreen from '../screens/LogoutScreen';
 import React from 'react';
 import colors from '../config/colors'
 
@@ -25,6 +27,8 @@ export default function AppNavigator() {
         <Stack.Screen name="Register" component={RegisterScreen} options={headerStyleNavy}/>
         <Stack.Screen name="Events" component={EventScreen} options={headerStyleNavy}/>
         <Stack.Screen name="EventForm" component={EventFormScreen} options={headerStyleNavy}/>
+        <Stack.Screen name="Login" component={LoginScreen} options={headerStyleNavy}/>
+        <Stack.Screen name="Logout" component={LogoutScreen} options={headerStyleNavy}/>
       </Stack.Navigator>
   )
 }

@@ -25,10 +25,9 @@ export default function RegisterScreen({navigation}) {
         navigation.navigate('Home');
       }  
   }
-  
+
   return(
     <View style={styles.container}>
-      <Text style={styles.header}></Text>
       <TextInput name="bandOrOrg" onChangeText={(text) => setOrganization(text)} placeholder="Enter your band or organization" />
       <TextInput name="email" onChangeText={(text) => setEmail(text)} placeholder="Enter your email" />
       <TextInput name="password" onChangeText={(text) => setPassword(text)} secureTextEntry={true} placeholder="Enter a password" />
