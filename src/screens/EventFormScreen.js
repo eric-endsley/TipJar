@@ -22,7 +22,6 @@ export default function EventFormScreen({navigation}) {
       <TextInput name="address" onChangeText={(text) => setAddress(text)} placeholder="Address"></TextInput>
       <TextInput name="datetime" onChangeText={(text) => setDatetime(text)} placeholder="Date and Time"></TextInput>
       <ImageForm  />
-      <ImageForm  />
       <CustomSlider />
       <Button style={styles.button} onPress={() => onSubmit()} icon="calendar-plus" mode="contained">
             Add Event
@@ -47,7 +46,6 @@ export default function EventFormScreen({navigation}) {
     navigation.navigate('Events')
   }
 }
-
 
 const styles = StyleSheet.create({
   button: {
