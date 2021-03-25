@@ -12,7 +12,7 @@ export default function LogoutScreen({navigation}) {
   }
 
   return( 
-    <View style={container}>
+    <View style={styles.container}>
       <Button style={styles.button} onPress={handlePress} icon="logout" mode="contained">
         Confirm Log Out
       </Button>

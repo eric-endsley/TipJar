@@ -18,7 +18,11 @@ export default function LoginScreen({navigation}) {
       <TextInput name="email" onChangeText={(text) => setEmail(text)} placeholder="Enter your email" />
       <TextInput name="password" onChangeText={(text) => setPassword(text)} secureTextEntry={true} placeholder="Enter your password" />
       <Button style={styles.button} onPress={handlePress} icon="login" mode="contained">
-        Confirm Log Out
+        Login
+      </Button>
+      <Text>Don't have an account?</Text>
+      <Button style={styles.button} onPress={() => navigation.navigate("Register")} icon="account" mode="contained">
+        Login
       </Button>
     </View>      
   )

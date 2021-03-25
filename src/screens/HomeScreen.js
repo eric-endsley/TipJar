@@ -6,41 +6,28 @@ import firebase from '../firebase/Firebase'
 
 
 export default function HomeScreen({navigation}) {
+
+const handlePress = () => {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) { 
-      return (
-        <>
-        <View styles={styles.container}>
-        <Button style={styles.button} onPress={() => navigation.navigate('Events')} icon="microphone-variant" mode="contained">
-            View Events
-          </Button>
-        <Button style={styles.button} onPress={() => navigation.navigate('LogOut')} icon="logout" mode="contained">
-            LogOut
-          </Button>
-          <Button style={styles.button} onPress={() => navigation.navigate('Register')} icon="account" mode="contained">
-            Register
-          </Button>
-        </View> 
-        </>
-      )
+      navigation.navigate('Logout')
     } else {
-        return(
-        <>
-        <View styles={styles.container}>
-        <Button style={styles.button} onPress={() => navigation.navigate('Events')} icon="microphone-variant" mode="contained">
-            View Events
-          </Button>
-        <Button style={styles.button} onPress={() => navigation.navigate('LogOut')} icon="logout" mode="contained">
-            LogOut
-          </Button>
-          <Button style={styles.button} onPress={() => navigation.navigate('Register')} icon="account" mode="contained">
-            Register
-          </Button>
-        </View> 
-        </>
-      )
+      navigation.navigate('Login')
     } 
-  });  
+  })
+}   
+ 
+  return (
+    <View styles={styles.container}>
+    <Button style={styles.button} onPress={() => navigation.navigate('Events')} icon="microphone-variant" mode="contained">
+        View Events
+      </Button>
+    <Button style={styles.button} onPress={handlePress} icon="account" mode="contained">
+        Login/Logout
+    </Button>
+    </View> 
+
+  )
 }
 
 const styles = StyleSheet.create({
