@@ -16,11 +16,11 @@ export default function EventFormScreen({navigation}) {
   return(
     <View style={styles.container}>
       <Text style={styles.header}>Add An Event</Text>
-      <TextInput name="name" onChangeText={(text) => setName(text)} placeholder="Event Name"></TextInput>
-      <TextInput name="peformers" onChangeText={(text) => setPerformers(text)} placeholder="Performer Names"></TextInput>
-      <TextInput name="venue" onChangeText={(text) => setVenue(text)} placeholder="venue"></TextInput>
-      <TextInput name="address" onChangeText={(text) => setAddress(text)} placeholder="Address"></TextInput>
-      <TextInput name="datetime" onChangeText={(text) => setDatetime(text)} placeholder="Date and Time"></TextInput>
+      <TextInput name="name" onChangeText={(text) => setName(text)} placeholder="Event Name" />
+      <TextInput name="peformers" onChangeText={(text) => setPerformers(text)} placeholder="Performer Names" />
+      <TextInput name="venue" onChangeText={(text) => setVenue(text)} placeholder="venue"/>
+      <TextInput name="address" onChangeText={(text) => setAddress(text)} placeholder="Address" />
+      <TextInput name="datetime" onChangeText={(text) => setDatetime(text)} placeholder="Date and Time" />
       <ImageForm  />
       <CustomSlider />
       <Button style={styles.button} onPress={() => onSubmit()} icon="calendar-plus" mode="contained">
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   container: {
-    backgroundColor: colors.seafoam,
+    backgroundColor: colors.grey,
     flex: 1
   }
 })
