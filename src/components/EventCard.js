@@ -5,7 +5,7 @@ import colors from '../config/colors'
 export default function EventCard(props) {
   return (
     <View style={styles.card}>
-      <Image style={styles.image} source={{uri:'https://picsum.photos/200/300'}} />
+      <Image style={styles.image} source={{uri:'https://picsum.photos/300/300'}} />
       <View style={styles.textarea}>
         <Text style={styles.title}>{props.name}</Text>
         <Text style={styles.info}>{props.venue}</Text>
@@ -22,12 +22,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: colors.black,
     backgroundColor: colors.navy,
+    borderWidth: 5,
     flexDirection: 'row',
     width: '80%',
     alignSelf: 'center',
   },
   image: {
     flex: 1,
+    resizeMode: 'cover'
   },
   textarea: {
     flex: 3

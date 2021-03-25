@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   container: {
-    backgroundColor: colors.grey,
+    backgroundColor: colors.seafoam,
     flex: 1
   }
 })

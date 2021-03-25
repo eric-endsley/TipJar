@@ -59,7 +59,8 @@ Workday 3/23/21
 3:30PM -- Expo live server stops working, won't connect
 
 4:00PM -- Debugging firestore not accepting data, not throwing errors
- 7:15PM -- After demonstrating that my firebase config is fine by sucessfully pushing data to realtime database, having read like 50 stack overflow pages and revisited the firebase & expo documentations an upsetting number of times, I am at a complete loss as to why I cannot send data to firestore. 
+
+7:15PM -- After demonstrating that my firebase config is fine by sucessfully pushing data to realtime database, having read like 50 stack overflow pages and revisited the firebase & expo documentations an upsetting number of times, I am at a complete loss as to why I cannot send data to firestore. 
 
 Midnight -- FINALLY GOT FIRESTORE ACTUALLY WORKING
 
@@ -67,3 +68,5 @@ Workday 3/24/21
 ----------
 
 5:30PM -- Finally get firestore data to display on event list screen!
+
+7:30PM -- Research authorization in expo

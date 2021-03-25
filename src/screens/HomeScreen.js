@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-native-paper';
+import colors from '../config/colors'
 import { View, Text, StyleSheet } from 'react-native';
 
 
